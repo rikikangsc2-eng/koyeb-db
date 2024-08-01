@@ -1,1 +1,286 @@
-function _0xc2e0(_0x65d78c,_0x567a01){const _0x158554=_0x1585();return _0xc2e0=function(_0xc2e02,_0x41ee2d){_0xc2e02=_0xc2e02-0x1b7;let _0x48fb67=_0x158554[_0xc2e02];return _0x48fb67;},_0xc2e0(_0x65d78c,_0x567a01);}const _0x521406=_0xc2e0;(function(_0x5e05b4,_0x2b23a3){const _0x99498d=_0xc2e0,_0x21c820=_0x5e05b4();while(!![]){try{const _0x1e1a47=parseInt(_0x99498d(0x1d3))/0x1*(parseInt(_0x99498d(0x1cf))/0x2)+-parseInt(_0x99498d(0x1c8))/0x3*(parseInt(_0x99498d(0x1c0))/0x4)+-parseInt(_0x99498d(0x1e4))/0x5+parseInt(_0x99498d(0x1df))/0x6+parseInt(_0x99498d(0x1e2))/0x7*(-parseInt(_0x99498d(0x1ca))/0x8)+parseInt(_0x99498d(0x1b7))/0x9+-parseInt(_0x99498d(0x1b8))/0xa*(parseInt(_0x99498d(0x1dd))/0xb);if(_0x1e1a47===_0x2b23a3)break;else _0x21c820['push'](_0x21c820['shift']());}catch(_0x4542d1){_0x21c820['push'](_0x21c820['shift']());}}}(_0x1585,0x277e7));const express=require(_0x521406(0x1c7)),fs=require('fs'),path=require('path'),app=express(),port=0xbb8,DATA_FILE='global.json',THIRTY_DAYS_MS=0x1e*0x18*0x3c*0x3c*0x3e8,MAX_JSON_SIZE=0x5*0x400*0x400,MAX_DB_SIZE=0x2*0x400*0x400*0x400;function _0x1585(){const _0x17e1e6=['540648QOoPUI','existsSync','json','7dkEqSP','now','155875sstKdu','1903662HCLgCq','5370RfdSnO','listen','params','data','get','timeRemove','toFixed','status','209724LesrfZ','byteLength','\x20MB</li>\x0a\x20\x20\x20\x20\x20\x20<li>Remaining\x20Size:\x20','/read/:userId','No\x20data\x20found\x20for\x20user\x20','\x0a<!doctype\x20html>\x0a<html\x20lang=\x22en\x22>\x0a\x20\x20<head>\x0a\x20\x20\x20\x20<meta\x20charset=\x22utf-8\x22>\x0a\x20\x20\x20\x20<meta\x20name=\x22viewport\x22\x20content=\x22width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\x22>\x0a\x20\x20\x20\x20<link\x20href=\x22https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\x22\x20rel=\x22stylesheet\x22>\x0a\x20\x20\x20\x20<link\x20href=\x22https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dark.min.css\x22\x20rel=\x22stylesheet\x22>\x0a\x20\x20\x20\x20<script\x20src=\x22https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js\x22></script>\x0a\x20\x20\x20\x20<script>hljs.highlightAll();</script>\x0a\x20\x20\x20\x20<title>API\x20Documentation</title>\x0a\x20\x20\x20\x20<style>\x0a\x20\x20\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#121212;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#ffffff;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2050px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20pre\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#1e1e1e;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20</style>\x0a\x20\x20</head>\x0a\x20\x20<body>\x0a\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20<h1\x20class=\x22mb-4\x22>API\x20Documentation</h1>\x0a\x20\x20\x20\x20\x20\x20<h2>Endpoints</h2>\x0a\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><code>POST\x20/write/:userId</code>\x20-\x20Writes\x20data\x20for\x20a\x20user\x20(Max\x205\x20MB\x20JSON)</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><code>GET\x20/read/:userId</code>\x20-\x20Reads\x20data\x20for\x20a\x20user</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><code>GET\x20/delete/:userId</code>\x20-\x20Deletes\x20data\x20for\x20a\x20user</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><code>GET\x20/</code>\x20-\x20API\x20Documentation</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li><code>GET\x20/dbinfo</code>\x20-\x20Shows\x20database\x20size\x20information</li>\x0a\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20<h2>Examples</h2>\x0a\x20\x20\x20\x20\x20\x20<h3>Python</h3>\x0a\x20\x20\x20\x20\x20\x20<pre><code\x20class=\x22language-python\x22>\x0aimport\x20requests\x0a\x0a#\x20Write\x20data\x0aresponse\x20=\x20requests.post(\x27http://nue-db.koyeb.app/write/user1\x27,\x20json={\x22json\x22:\x20{\x22key\x22:\x20\x22value\x22}})\x0aprint(response.text)\x0a\x0a#\x20Read\x20data\x0aresponse\x20=\x20requests.get(\x27http://nue-db.koyeb.app/read/user1\x27)\x0aprint(response.json())\x0a\x0a#\x20Delete\x20data\x0aresponse\x20=\x20requests.get(\x27http://nue-db.koyeb.app/delete/user1\x27)\x0aprint(response.text)\x0a\x0a#\x20DB\x20Info\x0aresponse\x20=\x20requests.get(\x27http://nue-db.koyeb.app/dbinfo\x27)\x0aprint(response.json())\x0a\x20\x20\x20\x20\x20\x20</code></pre>\x0a\x20\x20\x20\x20\x20\x20<h3>Node.js\x20with\x20Axios</h3>\x0a\x20\x20\x20\x20\x20\x20<pre><code\x20class=\x22language-javascript\x22>\x0aconst\x20axios\x20=\x20require(\x27axios\x27);\x0a\x0aaxios.post(\x27http://nue-db.koyeb.app/write/user1\x27,\x20{\x0a\x20\x20json:\x20{\x20key:\x20\x27value\x27\x20}\x0a}).then(response\x20=>\x20{\x0a\x20\x20console.log(response.data);\x0a});\x0a\x0aaxios.get(\x27http://nue-db.koyeb.app/read/user1\x27)\x0a\x20\x20.then(response\x20=>\x20{\x0a\x20\x20\x20\x20console.log(response.data);\x0a\x20\x20});\x0a\x0aaxios.get(\x27http://nue-db.koyeb.app/delete/user1\x27)\x0a\x20\x20.then(response\x20=>\x20{\x0a\x20\x20\x20\x20console.log(response.data);\x0a\x20\x20});\x0a\x0aaxios.get(\x27http://nue-db.koyeb.app/dbinfo\x27)\x0a\x20\x20.then(response\x20=>\x20{\x0a\x20\x20\x20\x20console.log(response.data);\x0a\x20\x20});\x0a\x20\x20\x20\x20\x20\x20</code></pre>\x0a\x20\x20\x20\x20\x20\x20<h3>cURL</h3>\x0a\x20\x20\x20\x20\x20\x20<pre><code\x20class=\x22language-bash\x22>\x0a#\x20Write\x20data\x0acurl\x20-X\x20POST\x20-H\x20\x22Content-Type:\x20application/json\x22\x20-d\x20\x27{\x22json\x22:{\x22key\x22:\x22value\x22}}\x27\x20\x22http://nue-db.koyeb.app/write/user1\x22\x0a\x0a#\x20Read\x20data\x0acurl\x20\x22http://nue-db.koyeb.app/read/user1\x22\x0a\x0a#\x20Delete\x20data\x0acurl\x20\x22http://nue-db.koyeb.app/delete/user1\x22\x0a\x0a#\x20DB\x20Info\x0acurl\x20\x22http://nue-db.koyeb.app/dbinfo\x22\x0a\x20\x20\x20\x20\x20\x20</code></pre>\x0a\x20\x20\x20\x20\x20\x20<h3>Example\x20Responses</h3>\x0a\x20\x20\x20\x20\x20\x20<pre><code\x20class=\x22language-json\x22>\x0a#\x20Response\x20for\x20writing\x20data\x0a\x22Data\x20for\x20user\x20user1\x20has\x20been\x20written\x22\x0a\x0a#\x20Response\x20for\x20reading\x20data\x0a{\x0a\x20\x20\x22key\x22:\x20\x22value\x22\x0a}\x0a\x0a#\x20Response\x20for\x20deleting\x20data\x0a\x22Data\x20for\x20user\x20user1\x20has\x20been\x20deleted\x22\x0a\x0a#\x20Error\x20response\x20for\x20missing\x20JSON\x20body\x20parameter\x0a\x22Missing\x20json\x20body\x20parameter\x22\x0a\x0a#\x20Error\x20response\x20for\x20non-existent\x20user\x20data\x0a\x22No\x20data\x20found\x20for\x20user\x20user1\x22\x0a\x0a#\x20Response\x20for\x20DB\x20info\x0a{\x0a\x20\x20\x22usedSize\x22:\x2012345,\x0a\x20\x20\x22remainingSize\x22:\x2052428800,\x0a\x20\x20\x22maxDbSize\x22:\x2052428800\x0a}\x0a\x20\x20\x20\x20\x20\x20</code></pre>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20</body>\x0a</html>\x0a\x20\x20','send','express','3anMgNQ','\x0a\x20\x20\x20\x20<p>Database\x20Size\x20Information:</p>\x0a\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20<li>Used\x20Size:\x20','1587880voDbJQ','stringify','writeFileSync','JSON\x20size\x20exceeds\x20the\x20maximum\x20limit\x20of\x205\x20MB','log','586258opyEsc','utf8','5mb','Missing\x20json\x20body\x20parameter','1OJqnhD','readFileSync','body','\x20MB</li>\x0a\x20\x20\x20\x20\x20\x20<li>Maximum\x20Size:\x20','keys','\x20MB</li>\x0a\x20\x20\x20\x20</ul>\x0a\x20\x20','use','/write/:userId','parse','forEach','3091CjwmEM','Data\x20for\x20user\x20'];_0x1585=function(){return _0x17e1e6;};return _0x1585();}app[_0x521406(0x1d9)](express[_0x521406(0x1e1)]({'limit':_0x521406(0x1d1)}));const readData=()=>{const _0x488275=_0x521406;if(fs[_0x488275(0x1e0)](DATA_FILE))return JSON[_0x488275(0x1db)](fs[_0x488275(0x1d4)](DATA_FILE,_0x488275(0x1d0)));return{};},writeData=_0x764e7c=>{const _0x239311=_0x521406;fs[_0x239311(0x1cc)](DATA_FILE,JSON[_0x239311(0x1cb)](_0x764e7c,null,0x2),'utf8');},removeInactiveUsers=()=>{const _0x440c5f=_0x521406,_0x4f9c19=readData(),_0x2aa7c0=Date[_0x440c5f(0x1e3)]();let _0x5d766d=![];Object[_0x440c5f(0x1d7)](_0x4f9c19)[_0x440c5f(0x1dc)](_0x2736d3=>{const _0x1c7cbc=_0x440c5f;_0x4f9c19[_0x2736d3][_0x1c7cbc(0x1bd)]<=_0x2aa7c0&&(delete _0x4f9c19[_0x2736d3],_0x5d766d=!![]);}),_0x5d766d&&writeData(_0x4f9c19);},getFileSizeInBytes=_0x13e64d=>{const _0x2e8226=fs['statSync'](_0x13e64d);return _0x2e8226['size'];},getRemainingDbSpace=_0x4e6bb5=>{return MAX_DB_SIZE-_0x4e6bb5;};app['use']((_0x20a920,_0x24034f,_0x3d42ea)=>{removeInactiveUsers(),_0x3d42ea();}),app[_0x521406(0x1bc)]('/dbinfo',(_0x5eee9a,_0x4c04e2)=>{const _0x42f97a=_0x521406,_0x1c8784=getFileSizeInBytes(DATA_FILE),_0x23f06c=getRemainingDbSpace(_0x1c8784),_0x273eb9=_0x1c8784/(0x400*0x400),_0x447c4a=_0x23f06c/(0x400*0x400),_0x20bcf2=MAX_DB_SIZE/(0x400*0x400);_0x4c04e2[_0x42f97a(0x1c6)](_0x42f97a(0x1c9)+_0x273eb9['toFixed'](0x2)+_0x42f97a(0x1c2)+_0x447c4a[_0x42f97a(0x1be)](0x2)+_0x42f97a(0x1d6)+_0x20bcf2[_0x42f97a(0x1be)](0x2)+_0x42f97a(0x1d8));}),app['post'](_0x521406(0x1da),(_0x58785d,_0x2f7699)=>{const _0x29065e=_0x521406,{userId:_0xacc48}=_0x58785d[_0x29065e(0x1ba)],_0x20e5e5=_0x58785d[_0x29065e(0x1d5)][_0x29065e(0x1e1)];if(!_0x20e5e5)return _0x2f7699['status'](0x190)[_0x29065e(0x1c6)](_0x29065e(0x1d2));const _0x1c09b3=Buffer[_0x29065e(0x1c1)](JSON[_0x29065e(0x1cb)](_0x20e5e5),_0x29065e(0x1d0));if(_0x1c09b3>MAX_JSON_SIZE)return _0x2f7699[_0x29065e(0x1bf)](0x190)['send'](_0x29065e(0x1cd));const _0x3668ae=readData(),_0x4cef75=Date[_0x29065e(0x1e3)]();_0x3668ae[_0xacc48]={'timeRemove':_0x4cef75+THIRTY_DAYS_MS,'data':_0x20e5e5},writeData(_0x3668ae),_0x2f7699[_0x29065e(0x1c6)](_0x29065e(0x1de)+_0xacc48+'\x20has\x20been\x20written');}),app[_0x521406(0x1bc)](_0x521406(0x1c3),(_0xb0039c,_0x2ca4dc)=>{const _0xbbe8d=_0x521406,{userId:_0x597e74}=_0xb0039c['params'],_0x337138=readData(),_0x194ba3=Date[_0xbbe8d(0x1e3)]();_0x337138[_0x597e74]?(_0x337138[_0x597e74][_0xbbe8d(0x1bd)]=_0x194ba3+THIRTY_DAYS_MS,writeData(_0x337138),_0x2ca4dc[_0xbbe8d(0x1e1)](_0x337138[_0x597e74][_0xbbe8d(0x1bb)])):_0x2ca4dc[_0xbbe8d(0x1e1)]({});}),app[_0x521406(0x1bc)]('/delete/:userId',(_0x5a663c,_0x4bf576)=>{const _0x129f6d=_0x521406,{userId:_0x5f42c2}=_0x5a663c[_0x129f6d(0x1ba)],_0x418459=readData();_0x418459[_0x5f42c2]?(delete _0x418459[_0x5f42c2],writeData(_0x418459),_0x4bf576['send']('Data\x20for\x20user\x20'+_0x5f42c2+'\x20has\x20been\x20deleted')):_0x4bf576[_0x129f6d(0x1bf)](0x194)['send'](_0x129f6d(0x1c4)+_0x5f42c2);}),app[_0x521406(0x1bc)]('/',(_0x32a099,_0x2db2fb)=>{const _0x32ca8e=_0x521406;_0x2db2fb[_0x32ca8e(0x1c6)](_0x32ca8e(0x1c5));}),app[_0x521406(0x1b9)](port,()=>{const _0x492c23=_0x521406;console[_0x492c23(0x1ce)]('Server\x20is\x20running\x20at\x20http://nue-db.koyeb.app');});
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const app = express();
+const port = 3000;
+
+const DATA_FILE = 'global.json';
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
+const MAX_JSON_SIZE = 5 * 1024 * 1024; // 5 MB in bytes
+
+const MAX_DB_SIZE = 2 * 1024 * 1024 * 1024; // 2 GB in bytes
+// Example maximum database size in bytes, adjust as needed
+
+// Middleware for parsing JSON body
+app.use(express.json({ limit: '5mb' }));
+
+const readData = () => {
+  if (fs.existsSync(DATA_FILE)) {
+    return JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+  }
+  return {};
+};
+
+const writeData = (data) => {
+  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), 'utf8');
+};
+
+const removeInactiveUsers = () => {
+  const data = readData();
+  const now = Date.now();
+  let modified = false;
+
+  Object.keys(data).forEach(userId => {
+    if (data[userId].timeRemove <= now) {
+      delete data[userId];
+      modified = true;
+    }
+  });
+
+  if (modified) {
+    writeData(data);
+  }
+};
+
+const getFileSizeInBytes = (filename) => {
+  const stats = fs.statSync(filename);
+  return stats.size;
+};
+
+const getRemainingDbSpace = (usedSize) => {
+  return MAX_DB_SIZE - usedSize;
+};
+
+// Middleware to check and remove inactive users
+app.use((req, res, next) => {
+  removeInactiveUsers();
+  next();
+});
+
+app.get('/dbinfo', (req, res) => {
+  const usedSize = getFileSizeInBytes(DATA_FILE);
+  const remainingSize = getRemainingDbSpace(usedSize);
+
+  const usedSizeMB = usedSize / (1024 * 1024);
+  const remainingSizeMB = remainingSize / (1024 * 1024);
+  const maxDbSizeMB = MAX_DB_SIZE / (1024 * 1024);
+  res.send(`
+    <p>Database Size Information:</p>
+    <ul>
+      <li>Used Size: ${usedSizeMB.toFixed(2)} MB</li>
+      <li>Remaining Size: ${remainingSizeMB.toFixed(2)} MB</li>
+      <li>Maximum Size: ${maxDbSizeMB.toFixed(2)} MB</li>
+    </ul>
+  `);
+});
+
+app.post('/write/:userId', (req, res) => {
+  const { userId } = req.params;
+  const json = req.body.json;
+
+  if (!json) {
+    return res.status(400).send('Missing json body parameter');
+  }
+
+  const dataSize = Buffer.byteLength(JSON.stringify(json), 'utf8');
+
+  if (dataSize > MAX_JSON_SIZE) {
+    return res.status(400).send(`JSON size exceeds the maximum limit of 5 MB`);
+  }
+
+  const data = readData();
+  const now = Date.now();
+  data[userId] = {
+    timeRemove: now + THIRTY_DAYS_MS,
+    data: json
+  };
+  writeData(data);
+
+  res.send(`Data for user ${userId} has been written`);
+});
+
+app.get('/read/:userId', (req, res) => {
+  const { userId } = req.params;
+  const data = readData();
+  const now = Date.now();
+
+  if (data[userId]) {
+    // Reset removal time
+    data[userId].timeRemove = now + THIRTY_DAYS_MS;
+    writeData(data);
+    res.json(data[userId].data);
+  } else { 
+    res.status(404).send(`
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 Not Found</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqk1wYanYv2ta2GnU+lU+yxzQ5JnK28xZkvtrIOy94wOFhQ6cYoFGgN" crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+      </head>
+
+      <body>
+        <div class="d-flex flex-column align-items-center justify-content-center vh-100">
+          <div class="text-center">
+            <h1 class="display-1"><i class="fas fa-exclamation-triangle"></i></h1>
+            <h2 class="display-4">404 Not Found</h2>
+            <p class="lead">The requested resource could not be found.</p>
+          </div>
+        </div>
+      </body>
+
+      </html>
+    `);
+  }
+});
+
+app.get('/delete/:userId', (req, res) => {
+  const { userId } = req.params;
+  const data = readData();
+
+  if (data[userId]) {
+    delete data[userId];
+    writeData(data);
+    res.send(`Data for user ${userId} has been deleted`);
+  } else {
+    res.status(404).send(`No data found for user ${userId}`);
+  }
+});
+
+app.get('/', (req, res) => {
+  res.send(`
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dark.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>API Documentation</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      pre {
+        background-color: #1e1e1e;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-4">API Documentation</h1>
+      <h2>Endpoints</h2>
+      <ul>
+        <li><code>POST /write/:userId</code> - Writes data for a user (Max 5 MB JSON)</li>
+        <li><code>GET /read/:userId</code> - Reads data for a user</li>
+        <li><code>GET /delete/:userId</code> - Deletes data for a user</li>
+        <li><code>GET /</code> - API Documentation</li>
+        <li><code>GET /dbinfo</code> - Shows database size information</li>
+      </ul>
+      <h2>Examples</h2>
+      <h3>Python</h3>
+      <pre><code class="language-python">
+import requests
+
+# Write data
+response = requests.post('http://nue-db.koyeb.app/write/user1', json={"json": {"key": "value"}})
+print(response.text)
+
+# Read data
+response = requests.get('http://nue-db.koyeb.app/read/user1')
+print(response.json())
+
+# Delete data
+response = requests.get('http://nue-db.koyeb.app/delete/user1')
+print(response.text)
+
+# DB Info
+response = requests.get('http://nue-db.koyeb.app/dbinfo')
+print(response.json())
+      </code></pre>
+      <h3>Node.js with Axios</h3>
+      <pre><code class="language-javascript">
+const axios = require('axios');
+
+axios.post('http://nue-db.koyeb.app/write/user1', {
+  json: { key: 'value' }
+}).then(response => {
+  console.log(response.data);
+});
+
+axios.get('http://nue-db.koyeb.app/read/user1')
+  .then(response => {
+    console.log(response.data);
+  });
+
+axios.get('http://nue-db.koyeb.app/delete/user1')
+  .then(response => {
+    console.log(response.data);
+  });
+
+axios.get('http://nue-db.koyeb.app/dbinfo')
+  .then(response => {
+    console.log(response.data);
+  });
+      </code></pre>
+      <h3>cURL</h3>
+      <pre><code class="language-bash">
+# Write data
+curl -X POST -H "Content-Type: application/json" -d '{"json":{"key":"value"}}' "http://nue-db.koyeb.app/write/user1"
+
+# Read data
+curl "http://nue-db.koyeb.app/read/user1"
+
+# Delete data
+curl "http://nue-db.koyeb.app/delete/user1"
+
+# DB Info
+curl "http://nue-db.koyeb.app/dbinfo"
+      </code></pre>
+      <h3>Example Responses</h3>
+      <pre><code class="language-json">
+# Response for writing data
+"Data for user user1 has been written"
+
+# Response for reading data
+{
+  "key": "value"
+}
+
+# Response for deleting data
+"Data for user user1 has been deleted"
+
+# Error response for missing JSON body parameter
+"Missing json body parameter"
+
+# Error response for non-existent user data
+"No data found for user user1"
+
+# Response for DB info
+{
+  "usedSize": 12345,
+  "remainingSize": 52428800,
+  "maxDbSize": 52428800
+}
+      </code></pre>
+    </div>
+  </body>
+</html>
+  `);
+});
+
+app.listen(port, () => {
+  console.log(`Server is running at http://nue-db.koyeb.app`);
+});
