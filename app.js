@@ -7,7 +7,9 @@ const port = 3000;
 const DATA_FILE = 'global.json';
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
 const MAX_JSON_SIZE = 5 * 1024 * 1024; // 5 MB in bytes
-const MAX_DB_SIZE = 50 * 1024 * 1024; // Example maximum database size in bytes, adjust as needed
+
+const MAX_DB_SIZE = 2 * 1024 * 1024 * 1024; // 2 GB in bytes
+// Example maximum database size in bytes, adjust as needed
 
 // Middleware for parsing JSON body
 app.use(express.json({ limit: '5mb' }));
